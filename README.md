@@ -19,6 +19,22 @@ Open [http://localhost:3000](http://localhost:3000).
 
 ---
 
+## Environment
+
+The SpaceX API base URL is configured via an environment variable so it can be overridden per environment:
+
+- `NEXT_PUBLIC_SPACEX_API_BASE` — default: `https://api.spacexdata.com/v4`
+
+For local development, copy `.env.template` to `.env.local` (or create `.env.local`) and set the value if you need a different endpoint:
+
+```bash
+NEXT_PUBLIC_SPACEX_API_BASE=https://api.spacexdata.com/v4
+```
+
+Restart `npm run dev` after changing env vars.
+
+---
+
 ## What’s in the app
 
 - **Launches** (`/`) — List with server-side pagination (“Load more”), filters (upcoming/past, success/failure, date range), sort, and search by mission name. Virtualized list (react-window) so scrolling stays smooth.
