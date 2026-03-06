@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+:root {
+  --background: #020617;
+  --foreground: #f9fafb;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #020617;
+    --foreground: #f9fafb;
+  }
+}
+
+body {
+  background: radial-gradient(circle at top, #082f49 0, #020617 45%, #000000 100%);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text",
+    "SF Pro Icons", "Helvetica Neue", Arial, sans-serif;
+}
