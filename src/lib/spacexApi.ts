@@ -1,6 +1,7 @@
 import { Launch, LaunchQueryOptions, LaunchQueryResponse, Launchpad, Rocket } from "@/types/spacex";
 
-const SPACEX_API_BASE = "https://api.spacexdata.com/v4";
+const SPACEX_API_BASE =
+  process.env.NEXT_PUBLIC_SPACEX_API_BASE;
 
 interface FetchLaunchesParams {
   pageParam?: number;
