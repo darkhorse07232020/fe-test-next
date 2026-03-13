@@ -44,6 +44,7 @@ export default function FavoritesPage() {
                   date_utc: fav.date_utc,
                   success: fav.success,
                   upcoming: fav.upcoming,
+                  details: null,
                   rocket: fav.rocket,
                   launchpad: fav.launchpad,
                   links: {

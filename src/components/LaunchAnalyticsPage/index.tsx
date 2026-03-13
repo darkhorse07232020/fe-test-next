@@ -222,7 +222,7 @@ export default function LaunchAnalyticsPage() {
                         fontSize: "0.7rem",
                       }}
                       labelStyle={{ color: "#e4e4e7" }}
-                      formatter={(value: number) => [`${value}%`, "Success rate"]}
+                      formatter={(value) => [`${value ?? 0}%`, "Success rate"]}
                     />
                     <Line
                       type="monotone"
